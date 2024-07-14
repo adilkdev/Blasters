@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/pointsFragment">
+
+    <fragment
+        android:id="@+id/pointsFragment"
+        android:name="com.app.blasters.ui.PointsFragment"
+        android:label="Main Screen"
+        tools:layout="@layout/fragment_points" >
+        <action
+            android:id="@+id/action_pointsFragment_to_matchesFragment"
+            app:destination="@id/matchesFragment" >
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/matchesFragment"
+        android:name="com.app.blasters.ui.MatchesFragment"
+        android:label="Detail Screen"
+        tools:layout="@layout/fragment_matches" />
+</navigation>
